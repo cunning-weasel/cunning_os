@@ -1,0 +1,19 @@
+# binaries
+*.bin
+
+# c build artifacts
+*.o
+*.so
+*.a
+*.out
+*.exe
+
+# IDEs
+.vscode/
+.idea/
+
+# emacs
+*~
+.#*
+*.elc
+
