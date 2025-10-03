@@ -1,5 +1,5 @@
 ; infinite loop on bytes (e9, fd, ff) - jump backwards 3 bytes
-loop:
+loop:   ; this is a label, like goto in c
     jmp loop
 
 ; fill with 510 zeros minus the size of the previous code
