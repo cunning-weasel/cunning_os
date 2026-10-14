@@ -1,6 +1,9 @@
 ; infinite loop on bytes (e9, fd, ff) - jump backwards 3 bytes
-loop:   ; this is a label, like goto in c
-    jmp loop
+; loop: ; this is a label, like goto in c
+;    jmp loop
+
+mv ah, 0x0e ; copy 0x0e (hexadecimal for decimal 14) into register or mem location
+
 
 ; fill with 510 zeros minus the size of the previous code since the bootsector
 ; must be exactly 512 bytes, and we need 2 bytes at the end for the magic number
